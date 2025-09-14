@@ -73,4 +73,5 @@ const copyNumber = (number) => {
   alert(`নাম্বার কপি হয়েছে ${number}`);
   copyCounter += 1;
   copyCounterElm.innerText = copyCounter;
+  navigator.clipboard.writeText(number);
 };
