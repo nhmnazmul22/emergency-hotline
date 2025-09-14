@@ -113,6 +113,7 @@ const emergencyCardContainer = document.getElementById("emergency-call-card");
             <div class="flex gap-2 items-center justify-between">
               <button
                 class="btn copy-btn w-[48%] bg-transparent shadow-none rounded-lg font-normal"
+                 onClick="copyNumber('${value.number}')"
               >
                 <i class="fa-regular fa-copy"></i> <span>Copy </span>
               </button>

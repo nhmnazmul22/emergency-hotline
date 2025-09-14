@@ -66,3 +66,11 @@ clearBtn.addEventListener("click", () => {
 });
 
 // =========== Copy number Features ========= //
+let copyCounter = 0;
+const copyCounterElm = document.getElementById("copy-count");
+
+const copyNumber = (number) => {
+  alert(`নাম্বার কপি হয়েছে ${number}`);
+  copyCounter += 1;
+  copyCounterElm.innerText = copyCounter;
+};
