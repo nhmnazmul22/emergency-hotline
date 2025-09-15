@@ -75,3 +75,5 @@ const copyNumber = (number) => {
   copyCounterElm.innerText = copyCounter;
   navigator.clipboard.writeText(number);
 };
+
+

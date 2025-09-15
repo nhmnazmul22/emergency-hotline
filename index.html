@@ -23,67 +23,77 @@
     <!-- Taliwind css CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#f5fff6] w-full anek-bangla-font">
+  <body class="bg-[#f5fff6] anek-bangla-font">
     <!-- Navbar -->
-    <nav
-      class="bg-white md:h-[80px] p-5 max-[1800px] flex justify-between items-center gap-5 max-md:flex-col"
-    >
-      <div class="w-[200px] h-[50px]">
-        <img
-          src="/assets/main-logo.png"
-          alt="Emergency Hotline"
-          class="w-full h-full"
-        />
-      </div>
-      <div class="flex justify-center items-center gap-5">
-        <div
-          class="bg-[#f5fff6] py-2 px-3 flex gap-2 rounded-full items-center"
-        >
-          <p id="love-count" class="font-black">0</p>
-          <img src="/assets/heart.png" alt="heart" class="w-[24px] h-[24px]" />
+    <nav class="bg-white">
+      <div
+        class="md:h-[80px] p-5 max-w-[1800px] mx-auto flex justify-between items-center gap-5 max-md:flex-col"
+      >
+        <div class="w-[200px] h-[50px]">
+          <img
+            src="/assets/main-logo.png"
+            alt="Emergency Hotline"
+            class="w-full h-full"
+          />
         </div>
-        <div
-          class="bg-[#f5fff6] py-2 px-3 flex gap-2 rounded-full items-center"
-        >
-          <p id="coin-count" class="font-black">100</p>
-          <img src="/assets/coin.png" alt="coin" class="w-[24px] h-[24px]" />
-        </div>
-        <div class="bg-[#00A63E] py-2 px-3 rounded-full">
-          <p class="font-normal text-center text-white">
-            <span id="copy-count">2</span> Copy
-          </p>
+        <div class="flex justify-center items-center gap-5">
+          <div
+            class="bg-[#f5fff6] py-2 px-3 flex gap-2 rounded-full items-center"
+          >
+            <p id="love-count" class="font-black">0</p>
+            <img
+              src="/assets/heart.png"
+              alt="heart"
+              class="w-[24px] h-[24px]"
+            />
+          </div>
+          <div
+            class="bg-[#f5fff6] py-2 px-3 flex gap-2 rounded-full items-center"
+          >
+            <p id="coin-count" class="font-black">100</p>
+            <img src="/assets/coin.png" alt="coin" class="w-[24px] h-[24px]" />
+          </div>
+          <div class="bg-[#00A63E] py-2 px-3 rounded-full">
+            <p class="font-normal text-center text-white">
+              <span id="copy-count">0</span> Copy
+            </p>
+          </div>
         </div>
       </div>
     </nav>
 
     <!-- Banner Section -->
     <header
-      class="banner-background w-full min-h-[240px] p-5 max-[1800px] flex justify-center items-center"
+      class="banner-background w-full min-h-[240px] p-5 flex justify-center items-center"
     >
-      <div class="text-center flex flex-col gap-3">
-        <img
-          src="/assets/logo-dark.png"
-          alt="logo"
-          class="mx-auto w-[92px] h-[92px]"
-        />
-        <h1 class="text-white text-[40px] font-semibold">
-          জরুরি সেবা ডিরেক্টরি
-        </h1>
-        <p class="text-white text-xl">
-          Government Emergency Services at Your Fingertip – A Project by
-          Government of the People’s Republic of Bangladesh
-        </p>
+      <div class="max-w-[1800px] mx-auto">
+        <div class="text-center flex flex-col gap-3">
+          <img
+            src="/assets/logo-dark.png"
+            alt="logo"
+            class="mx-auto w-[92px] h-[92px]"
+          />
+          <h1 class="text-white text-[40px] font-semibold">
+            জরুরি সেবা ডিরেক্টরি
+          </h1>
+          <p class="text-white text-xl">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
       </div>
     </header>
 
     <!-- Service Card & History -->
     <main
-      class="p-5 max-[1800px] grid grid-cols-12 gap-8 mt-10 justify-between items-start"
+      class="p-5 max-w-[1800px] mx-auto grid grid-cols-12 gap-8 mt-10 justify-between items-start"
     >
       <div class="col-span-12 md:col-span-9">
         <div id="emergency-call-card" class="grid grid-cols-12 gap-6"></div>
       </div>
-      <div class="col-span-12 bg-white md:col-span-3 shadow rounded-xl p-4">
+      <div
+        class="col-span-12 bg-white md:col-span-3 shadow rounded-xl p-4 h-full"
+      >
         <div class="flex justify-between items-center">
           <div class="flex gap-2 items-center">
             <i class="fa-regular fa-clock"></i>
